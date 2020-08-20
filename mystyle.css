@@ -1,0 +1,44 @@
+#wrapper {
+	width: auto;
+	 height: auto;
+	 box-sizing: border-box;
+	 display: grid;
+	 grid-auto-flow: row;
+	 grid-template-columns: repeat(6, 1fr);
+ }
+ 
+ #my_dataviz1{
+	 text-align: left;
+	 grid-column: 1/4;
+ }
+ 
+ #my_dataviz2 {
+	 text-align: right;
+	 grid-column: 4/6;
+ }
+
+ /* .inline-div {
+	display: block;
+	text-align: left;
+  }
+  
+  h2
+  {
+	display: inline-block;
+	text-align: center;
+  } */
+
+  .text-left-right {
+    text-align: right;
+    position: relative;
+}
+.left-text {
+    left: 20%;
+    position: absolute;
+}
+.byline {
+    /* font-size: 16px;
+	color: rgba(140, 140, 140, 1); */
+	left: 60%;
+    position: absolute;
+}
