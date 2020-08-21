@@ -1,0 +1,394 @@
+﻿DATE,CLUSTER,CAT_TOT,VALUE
+2018-08-01,Utilities,89.99,1
+2018-09-01,Utilities,1157.05,4
+2018-10-01,Utilities,366.25,2
+2018-11-01,Utilities,366.25,2
+2018-12-01,Utilities,1130.49,5
+2019-01-01,Utilities,366.25,2
+2019-02-01,Utilities,381.15,3
+2019-03-01,Utilities,671.61,4
+2019-04-01,Utilities,480.38,2
+2019-05-01,Utilities,459.65,3
+2019-06-01,Utilities,1019.97,5
+2019-07-01,Utilities,1389.41,4
+2019-08-01,Utilities,90,1
+2019-09-01,Utilities,1216.35,5
+2019-10-01,Utilities,609.07,3
+2019-11-01,Utilities,386.87,2
+2019-12-01,Utilities,1048.53,5
+2020-01-01,Utilities,386.87,2
+2020-02-01,Utilities,441.72,4
+2020-03-01,Utilities,704.53,4
+2020-04-01,Utilities,493.23,2
+2020-05-01,Utilities,483.82,3
+2020-06-01,Utilities,1995.82,8
+2020-07-01,Utilities,386.87,2
+2018-09-01,Travel,1192.26,1
+2018-11-01,Travel,3869,1
+2018-12-01,Travel,1896,1
+2019-01-01,Travel,325.63,3
+2019-08-01,Travel,1823.44,3
+2019-09-01,Travel,35,1
+2019-10-01,Travel,39,1
+2019-12-01,Travel,2416.77,2
+2020-06-01,Travel,50.6,2
+2018-08-01,Subscription,29.48,3
+2018-09-01,Subscription,19.48,2
+2018-10-01,Subscription,19.48,2
+2018-11-01,Subscription,29.48,3
+2018-12-01,Subscription,19.48,2
+2019-01-01,Subscription,83.48,4
+2019-02-01,Subscription,19.48,2
+2019-03-01,Subscription,19.48,2
+2019-04-01,Subscription,29.48,3
+2019-05-01,Subscription,74.97,4
+2019-06-01,Subscription,44.48,3
+2019-07-01,Subscription,44.48,4
+2019-08-01,Subscription,19.48,2
+2019-09-01,Subscription,19.48,2
+2019-10-01,Subscription,29.48,3
+2019-11-01,Subscription,29.78,3
+2019-12-01,Subscription,21.48,2
+2020-01-01,Subscription,31.48,3
+2020-02-01,Subscription,21.48,2
+2020-03-01,Subscription,31.98,3
+2020-04-01,Subscription,21.48,2
+2020-05-01,Subscription,21.48,2
+2020-06-01,Subscription,26.48,3
+2020-07-01,Subscription,21.48,2
+2018-08-01,Retail Shopping,87.47,5
+2018-09-01,Retail Shopping,149.16,10
+2018-10-01,Retail Shopping,75.91,6
+2018-11-01,Retail Shopping,77.51,4
+2018-12-01,Retail Shopping,325.27,6
+2019-01-01,Retail Shopping,79.99,3
+2019-02-01,Retail Shopping,47.75,3
+2019-03-01,Retail Shopping,317.32,10
+2019-04-01,Retail Shopping,115.7,8
+2019-05-01,Retail Shopping,139.53,6
+2019-06-01,Retail Shopping,170.95,8
+2019-07-01,Retail Shopping,145.86,11
+2019-08-01,Retail Shopping,122.4,7
+2019-09-01,Retail Shopping,306.06,14
+2019-10-01,Retail Shopping,59,4
+2019-11-01,Retail Shopping,444.58,11
+2020-02-01,Retail Shopping,63,2
+2020-03-01,Retail Shopping,68.48,5
+2020-04-01,Retail Shopping,59,1
+2020-05-01,Retail Shopping,19.97,1
+2020-06-01,Retail Shopping,54,3
+2020-07-01,Retail Shopping,55.13,4
+2018-08-01,Restaurants & dining,40.9,2
+2018-09-01,Restaurants & dining,83.35,3
+2018-10-01,Restaurants & dining,99.9,4
+2018-11-01,Restaurants & dining,110.88,5
+2018-12-01,Restaurants & dining,13,2
+2019-01-01,Restaurants & dining,11,1
+2019-02-01,Restaurants & dining,55.7,4
+2019-03-01,Restaurants & dining,160.8,7
+2019-04-01,Restaurants & dining,235.33,7
+2019-05-01,Restaurants & dining,88.47,5
+2019-06-01,Restaurants & dining,101.25,7
+2019-07-01,Restaurants & dining,249.2,9
+2019-08-01,Restaurants & dining,170.7,8
+2019-09-01,Restaurants & dining,140.04,8
+2019-10-01,Restaurants & dining,219.43,7
+2019-11-01,Restaurants & dining,235.28,7
+2019-12-01,Restaurants & dining,22.35,2
+2020-01-01,Restaurants & dining,33.17,3
+2020-02-01,Restaurants & dining,36.95,3
+2020-03-01,Restaurants & dining,123.4,5
+2020-06-01,Restaurants & dining,114.24,3
+2020-07-01,Restaurants & dining,23,3
+2018-08-01,Miscellaneous,129,2
+2018-10-01,Miscellaneous,22.25,1
+2018-11-01,Miscellaneous,11.25,1
+2018-12-01,Miscellaneous,184.98,3
+2019-01-01,Miscellaneous,27.98,1
+2019-02-01,Miscellaneous,269.3,6
+2019-03-01,Miscellaneous,152.85,2
+2019-04-01,Miscellaneous,106.43,3
+2019-05-01,Miscellaneous,287.47,3
+2019-06-01,Miscellaneous,293.44,2
+2019-07-01,Miscellaneous,454.65,5
+2019-08-01,Miscellaneous,1395.03,7
+2019-09-01,Miscellaneous,642.51,1
+2019-10-01,Miscellaneous,44.88,1
+2019-11-01,Miscellaneous,450.45,7
+2019-12-01,Miscellaneous,8.92,1
+2020-01-01,Miscellaneous,165,1
+2020-02-01,Miscellaneous,112.5,1
+2020-03-01,Miscellaneous,32.32,2
+2020-06-01,Miscellaneous,151.77,3
+2020-07-01,Miscellaneous,95.96,3
+2018-08-01,Loan Pay,-4714.2,4
+2018-09-01,Loan Pay,3200,4
+2018-10-01,Loan Pay,4000,5
+2018-11-01,Loan Pay,3200,4
+2018-12-01,Loan Pay,4000,5
+2019-01-01,Loan Pay,3200,4
+2019-02-01,Loan Pay,3410,4
+2019-03-01,Loan Pay,5086.07,5
+2019-04-01,Loan Pay,4350,5
+2019-05-01,Loan Pay,3480,4
+2019-06-01,Loan Pay,3480,4
+2019-07-01,Loan Pay,4350,5
+2019-08-01,Loan Pay,3480,4
+2019-09-01,Loan Pay,4350,5
+2019-10-01,Loan Pay,3480,4
+2019-11-01,Loan Pay,6780,5
+2019-12-01,Loan Pay,4350,5
+2020-01-01,Loan Pay,180,5
+2020-02-01,Loan Pay,3480,4
+2020-03-01,Loan Pay,41470,9
+2020-04-01,Loan Pay,16360,9
+2020-05-01,Loan Pay,5480,6
+2020-06-01,Loan Pay,3490,7
+2020-07-01,Loan Pay,7480,9
+2018-08-01,Investments,500,1
+2018-09-01,Investments,500,1
+2018-10-01,Investments,500,2
+2018-11-01,Investments,500,2
+2018-12-01,Investments,500,2
+2019-01-01,Investments,500,2
+2019-02-01,Investments,430,2
+2019-03-01,Investments,25200.42,3
+2019-04-01,Investments,430,2
+2019-05-01,Investments,60430,3
+2019-06-01,Investments,50430,5
+2019-07-01,Investments,10430,3
+2019-08-01,Investments,430,2
+2019-09-01,Investments,430,2
+2019-10-01,Investments,430,2
+2019-11-01,Investments,200,1
+2019-12-01,Investments,200,1
+2020-01-01,Investments,200,1
+2020-02-01,Investments,200,1
+2020-03-01,Investments,200,1
+2020-04-01,Investments,200,1
+2020-05-01,Investments,200,1
+2020-06-01,Investments,200,1
+2020-07-01,Investments,200,1
+2018-08-01,Insurance,76.21,1
+2018-09-01,Insurance,361.74,3
+2018-10-01,Insurance,514.16,5
+2018-11-01,Insurance,437.95,4
+2018-12-01,Insurance,437.95,4
+2019-01-01,Insurance,437.95,4
+2019-02-01,Insurance,415.47,4
+2019-03-01,Insurance,437.22,4
+2019-04-01,Insurance,523.64,5
+2019-05-01,Insurance,448.43,4
+2019-06-01,Insurance,300.06,2
+2019-07-01,Insurance,525.05,5
+2019-08-01,Insurance,598.85,5
+2019-09-01,Insurance,612.58,5
+2019-10-01,Insurance,580.4,5
+2019-11-01,Insurance,503.44,4
+2019-12-01,Insurance,657.36,6
+2020-01-01,Insurance,580.4,5
+2020-02-01,Insurance,509.22,4
+2020-03-01,Insurance,1197.96,7
+2020-04-01,Insurance,508.69,4
+2020-05-01,Insurance,431.73,3
+2020-06-01,Insurance,572.2,5
+2020-07-01,Insurance,404.95,3
+2018-08-01,"Hotels, motels & resorts",457.33,2
+2019-01-01,"Hotels, motels & resorts",1078.85,1
+2019-02-01,"Hotels, motels & resorts",19.75,1
+2019-03-01,"Hotels, motels & resorts",365.41,1
+2019-10-01,"Hotels, motels & resorts",1488.45,1
+2020-02-01,"Hotels, motels & resorts",597.67,1
+2018-08-01,Grocery & supermarkets,520.11,31
+2018-09-01,Grocery & supermarkets,751.88,49
+2018-10-01,Grocery & supermarkets,650.08,45
+2018-11-01,Grocery & supermarkets,829.36,49
+2018-12-01,Grocery & supermarkets,683.29,30
+2019-01-01,Grocery & supermarkets,311.17,18
+2019-02-01,Grocery & supermarkets,737.02,41
+2019-03-01,Grocery & supermarkets,917.49,50
+2019-04-01,Grocery & supermarkets,789.1,47
+2019-05-01,Grocery & supermarkets,905.2,55
+2019-06-01,Grocery & supermarkets,911.5,45
+2019-07-01,Grocery & supermarkets,804.08,44
+2019-08-01,Grocery & supermarkets,829.67,58
+2019-09-01,Grocery & supermarkets,740.29,54
+2019-10-01,Grocery & supermarkets,611.35,35
+2019-11-01,Grocery & supermarkets,753.02,50
+2019-12-01,Grocery & supermarkets,276.61,13
+2020-01-01,Grocery & supermarkets,178.14,6
+2020-02-01,Grocery & supermarkets,736,41
+2020-03-01,Grocery & supermarkets,1180.15,50
+2020-04-01,Grocery & supermarkets,497.91,12
+2020-05-01,Grocery & supermarkets,907.91,35
+2020-06-01,Grocery & supermarkets,743.94,39
+2020-07-01,Grocery & supermarkets,899.42,42
+2018-09-01,Gifts & donations,8,1
+2018-10-01,Gifts & donations,5,1
+2018-11-01,Gifts & donations,85,1
+2018-12-01,Gifts & donations,37,1
+2019-02-01,Gifts & donations,46.45,4
+2019-03-01,Gifts & donations,85,1
+2019-04-01,Gifts & donations,8,1
+2019-05-01,Gifts & donations,28,1
+2019-06-01,Gifts & donations,179,3
+2019-08-01,Gifts & donations,12,1
+2019-09-01,Gifts & donations,10,1
+2019-10-01,Gifts & donations,48.98,2
+2020-02-01,Gifts & donations,105.58,4
+2020-03-01,Gifts & donations,180,3
+2020-07-01,Gifts & donations,5.5,1
+2018-08-01,Fees & charges,10.3,2
+2018-09-01,Fees & charges,2.24,2
+2018-10-01,Fees & charges,5.68,3
+2018-11-01,Fees & charges,2.95,3
+2018-12-01,Fees & charges,4.52,2
+2019-01-01,Fees & charges,2.4,2
+2019-02-01,Fees & charges,2.03,1
+2019-03-01,Fees & charges,12.99,3
+2019-04-01,Fees & charges,0.33,2
+2019-05-01,Fees & charges,7.93,3
+2019-09-01,Fees & charges,4.03,3
+2019-11-01,Fees & charges,10.07,2
+2019-12-01,Fees & charges,10.28,2
+2020-01-01,Fees & charges,0.51,2
+2020-02-01,Fees & charges,30.72,2
+2020-05-01,Fees & charges,400,1
+2020-06-01,Fees & charges,300,1
+2020-07-01,Fees & charges,500,1
+2018-08-01,Fast food restaurants,155.98,4
+2018-09-01,Fast food restaurants,468.47,18
+2018-10-01,Fast food restaurants,229.1,10
+2018-11-01,Fast food restaurants,128.5,9
+2018-12-01,Fast food restaurants,94.2,9
+2019-01-01,Fast food restaurants,28.8,3
+2019-02-01,Fast food restaurants,230.47,8
+2019-03-01,Fast food restaurants,234.22,8
+2019-04-01,Fast food restaurants,85.14,4
+2019-05-01,Fast food restaurants,28.73,3
+2019-06-01,Fast food restaurants,36.62,4
+2019-07-01,Fast food restaurants,36.3,5
+2019-08-01,Fast food restaurants,47.3,8
+2019-09-01,Fast food restaurants,84.8,6
+2019-10-01,Fast food restaurants,94.5,8
+2019-11-01,Fast food restaurants,80.9,2
+2019-12-01,Fast food restaurants,103.6,5
+2020-01-01,Fast food restaurants,140.49,6
+2020-02-01,Fast food restaurants,133.93,7
+2020-06-01,Fast food restaurants,30,1
+2020-07-01,Fast food restaurants,115.94,2
+2018-08-01,Entertainment,12,1
+2018-10-01,Entertainment,48.96,3
+2019-02-01,Entertainment,65.5,5
+2019-03-01,Entertainment,63,2
+2019-04-01,Entertainment,44.9,2
+2019-06-01,Entertainment,15,1
+2019-07-01,Entertainment,25.2,1
+2019-08-01,Entertainment,51.92,2
+2019-09-01,Entertainment,95.57,4
+2019-10-01,Entertainment,72.6,3
+2019-11-01,Entertainment,28,1
+2019-12-01,Entertainment,155.88,1
+2020-06-01,Entertainment,7.49,1
+2018-08-01,Education,3374.5,2
+2018-09-01,Education,187.92,4
+2018-10-01,Education,94,3
+2018-11-01,Education,142.32,3
+2018-12-01,Education,67.26,1
+2019-01-01,Education,3516.16,2
+2019-02-01,Education,67.7,1
+2019-03-01,Education,99.67,2
+2019-04-01,Education,9,1
+2019-05-01,Education,3869.24,6
+2019-06-01,Education,21.19,1
+2019-07-01,Education,60.2,5
+2019-09-01,Education,4072,2
+2019-10-01,Education,4.98,1
+2019-11-01,Education,53.82,4
+2020-01-01,Education,24.22,1
+2020-02-01,Education,4174.98,2
+2020-03-01,Education,83.8,2
+2020-04-01,Education,794.95,4
+2020-05-01,Education,4189,1
+2020-06-01,Education,35.64,4
+2020-07-01,Education,22.75,2
+2018-08-01,Chemists,10.98,1
+2018-09-01,Chemists,50,1
+2018-11-01,Chemists,51.19,3
+2018-12-01,Chemists,25.97,1
+2019-03-01,Chemists,6.99,1
+2019-04-01,Chemists,67.37,3
+2019-07-01,Chemists,152.96,4
+2019-08-01,Chemists,189.47,3
+2019-09-01,Chemists,30.98,1
+2019-10-01,Chemists,52.89,2
+2019-11-01,Chemists,425.4,9
+2020-02-01,Chemists,75.6,1
+2020-03-01,Chemists,73.95,3
+2020-05-01,Chemists,208.94,3
+2020-06-01,Chemists,30.44,2
+2020-07-01,Chemists,85,1
+2018-08-01,Cash Out,1780,4
+2018-09-01,Cash Out,1210,5
+2018-10-01,Cash Out,2401.49,5
+2018-11-01,Cash Out,450,3
+2018-12-01,Cash Out,640,4
+2019-01-01,Cash Out,4480,2
+2019-02-01,Cash Out,555,5
+2019-03-01,Cash Out,807.5,6
+2019-04-01,Cash Out,5581.86,4
+2019-05-01,Cash Out,650,3
+2019-06-01,Cash Out,400,2
+2019-07-01,Cash Out,1200,2
+2019-08-01,Cash Out,3125,8
+2019-09-01,Cash Out,3200.07,6
+2019-10-01,Cash Out,3781.45,6
+2019-12-01,Cash Out,1100,2
+2020-01-01,Cash Out,4000,2
+2020-02-01,Cash Out,1217,8
+2020-03-01,Cash Out,1681,4
+2020-04-01,Cash Out,1420,2
+2020-05-01,Cash Out,1150,2
+2020-06-01,Cash Out,150,1
+2020-07-01,Cash Out,3246.06,5
+2018-09-01,Bottleshops,49.5,2
+2018-11-01,Bottleshops,21,1
+2018-12-01,Bottleshops,69.9,2
+2019-01-01,Bottleshops,69.99,1
+2019-02-01,Bottleshops,69,3
+2019-03-01,Bottleshops,7.45,1
+2019-05-01,Bottleshops,23.8,1
+2019-08-01,Bottleshops,32,3
+2019-09-01,Bottleshops,72,3
+2019-10-01,Bottleshops,96.81,4
+2019-11-01,Bottleshops,65.9,2
+2019-12-01,Bottleshops,84.74,2
+2020-01-01,Bottleshops,145,1
+2020-03-01,Bottleshops,39,1
+2020-04-01,Bottleshops,400,15
+2020-05-01,Bottleshops,500,15
+2020-06-01,Bottleshops,1000,20
+2020-07-01,Bottleshops,1200,30
+2018-08-01,Auto & transport,376.72,17
+2018-09-01,Auto & transport,483.24,22
+2018-10-01,Auto & transport,238.56,13
+2018-11-01,Auto & transport,575.5,30
+2018-12-01,Auto & transport,396.2,19
+2019-01-01,Auto & transport,222.78,15
+2019-02-01,Auto & transport,515.11,21
+2019-03-01,Auto & transport,1182.32,32
+2019-04-01,Auto & transport,455.98,26
+2019-05-01,Auto & transport,416.86,28
+2019-06-01,Auto & transport,374.49,24
+2019-07-01,Auto & transport,475.97,31
+2019-08-01,Auto & transport,778.56,29
+2019-09-01,Auto & transport,237.62,19
+2019-10-01,Auto & transport,313.16,13
+2019-11-01,Auto & transport,214.38,16
+2019-12-01,Auto & transport,228.35,17
+2020-01-01,Auto & transport,51.03,3
+2020-02-01,Auto & transport,376.86,19
+2020-03-01,Auto & transport,122.54,8
+2020-05-01,Auto & transport,62.52,4
+2020-06-01,Auto & transport,165.56,8
+2020-07-01,Auto & transport,12.5,5
