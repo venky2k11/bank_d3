@@ -7,7 +7,7 @@ async function init5() {
     function update(data) {
 
         // set the dimensions and margins of the graph
-        var margin = { top: 10, right: 30, bottom: 30, left: 60 },
+        var margin = { top: 10, right: 200, bottom: 30, left: 60 },
             width = 1700 - margin.left - margin.right,
             height = 400 - margin.top - margin.bottom;
 
