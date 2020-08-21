@@ -1,63 +1,146 @@
-<!doctype html>
 <html>
 
 <head>
-    <title>Vrb3: Narrative Visualization Project</title>
-    <script src="https://d3js.org/d3.v5.js"></script>
-    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
-    <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
-    <link rel="stylesheet" type="text/css" href="mystyle.css">
-    <script type="text/javascript" language="javascript" src="Income.js"></script>
-    <script type="text/javascript" language="javascript" src="Expense.js"></script>
-    <!-- <script type="text/javascript" language="javascript" src="IncomeExpense.js"></script> -->
-    <!-- <script type="text/javascript" language="javascript" src="confirmed_timeline.js"></script>
-    <script type="text/javascript" language="javascript" src="map_confirmed2.js"></script> -->
+  <title>Intelligent Transactions Analyser</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/fundamental-styles@0.5.0/dist/fundamental-styles.css">
+  <script src="https://d3js.org/d3.v5.js"></script>
+  <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+  <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <script type="text/javascript" language="javascript" src="Income.js"></script>
+  <script type="text/javascript" language="javascript" src="Expense.js"></script>
+  <script type="text/javascript" language="javascript" src="NeedsPercentage.js"></script>
+  <script type="text/javascript" language="javascript" src="DesirePercentage.js"></script>
+  <script type="text/javascript" language="javascript" src="PopularExpenses.js"></script>
 </head>
 
-<body onload='init1();init2()'>
-    <div class="header">
-        <!-- <img src="H3.png" alt="logo" /> -->
+<body onload='init1();init2();init3();init4();init5()'>
+  <div class="fd-shell--fixed">
+    <div class="fd-shell__header">
+      <div class="fd-shellbar">
+        <div class="fd-shellbar__group fd-shellbar__group--start">
+          <a href="#" class="fd-shellbar__logo"><img
+              src="https://finance-test-happy-sitatunga.cfapps.ap10.hana.ondemand.com/static/ff-dist/images/sap-logo.png"
+              width="48" height="24" alt="SAP"></a>
+          <div class="fd-shellbar__product">
+            <span class="fd-shellbar__title">BANK (DEMO)</span>
+          </div>
+        </div>
+        <div class="fd-shellbar__group fd-shellbar__group--actions">
+          <div class="fd-shellbar__action">
+            <div class="fd-popover fd-popover--right">
+              <div class="fd-popover__control">
+                <div aria-controls="WV3AY276" aria-expanded="false" aria-haspopup="true" role="button">
+                  <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail"
+                    style="background-image: url(https://sap.github.io/fundamental/images/thumbs/headshot-male.jpg)"
+                    aria-label="William Wallingham">WW</span>
+                </div>
+              </div>
+              <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="WV3AY276">
+                <nav class="fd-menu">
+                  <ul class="fd-menu__list">
+                    <li><a role="button" class="fd-menu__item" href="/reset">Reset Demo</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <p> <br>
+  </div>
+  <div style="margin-top: 8px !important" class="fd-shell__app">
+    <div class="fd-app">
+      <main class="fd-app__main">
+        <section class="fd-section">
+          <ul class="fd-breadcrumb">
+            <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="/">Home</a></li>
+          </ul>
+          <h3 class="fd-section__title">Intelligent Transaction Analyser</h3>
+        </section>
+        <section class="fd-section">
+          <div class="fd-layout">
+            <div class="fd-panel">
+              <div class="fd-panel__body">
+                <b>Name:</b> Sarah Doe<br />
+                <b>Date of Birth: </b> 29th July 1983:<br />
+                <b>Address: </b> 17 Denman Prospect, Canberra, ACT 2607:<br />
+                <br /><br />
+              </div>
 
-    <p>
-        Name: Sarah Doe<br/><br/>
-        Date of Birth: 29th July 1983
+              <h2 class="text-left-right">
+                <span class="left-text">Income (Last 24 months):</span>
+                <span class="byline">Expenses (Last 24 months):</span>
+              </h2>
 
-    </p>
+              <br /><br /><br />
 
-    <!-- Scene: 1 -->
+              <div id="wrapper">
+                <div id="my_dataviz1" style="text-align:center;"></div>
+                <div id="my_dataviz2" style="text-align:center;"></div>
+              </div>
 
-    <!-- <div style="clear: both">
-        <h2 style="float: inline-start">Income (Last 24 months):</h2>
-        <h2 style="float: inline-start">Expenses (Last 24 months):</h2>
-    </div> -->
+              <br /><br /><br /><br />
 
-    <h2 class="text-left-right">
-        <span class="left-text">Income (Last 24 months):</span>
-        <span class="byline">Expenses (Last 24 months):</span>
-    </h2>
+              <h2 class="text-left-right">
+                <span class="left-text">% Income spent on Needs:</span>
+                <span class="byline">% Income spent on Desires:</span>
+              </h2>
 
-    <br/><br/><br/>
+              <br /><br /><br /><br />
 
-    <div id="wrapper">
-        <div id="my_dataviz1" style="text-align:center;"></div>
-        <div id="my_dataviz2" style="text-align:center;"></div>
+              <div id="wrapper2">
+                <div id="my_dataviz3" style="text-align:center;"></div>
+                <div id="my_dataviz4" style="text-align:center;"></div>
+              </div>
+
+              <br /><br /><br /><br />
+
+              <br /><br /><br /><br />
+
+              <h2 class="text-left-right">
+                <span class="left-text">Popular Expenses (Shopping Frequency):</span>
+              </h2>
+
+              <br /><br /><br /><br />
+
+              <div id="wrapper3">
+                <div id="my_dataviz5" style="text-align:center;"></div>
+              </div>
+
+              <br /><br /><br /><br />              
+
+            </div>
+          </div>
+        </section>
+        <section class="fd-section">
+        </section>
+      </main>
     </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script>
+    // $('.alert').alert()
+    $(document).ready(function () {
+      var messages = "[]";
 
-    <br/><br/><br/>
-
-    <div id="my_dataviz3" style="text-align:center;"></div>
-    <p> </p>`
-
-
-
-
-
-    <footer class="footer">
-        <p>Author: Venkat B Rao</p>
-        <p><a class="eml" href="mailto:venkat.rao.bhamidipathi@sap.com">venkat.rao.bhamidipathi@sap.com</a></p>
-    </footer>
-
+      if (typeof messages != 'undefined' && messages != '[]') {
+        $("#myModal").modal();
+      };
+    });
+  </script>
 </body>
+
+</html>

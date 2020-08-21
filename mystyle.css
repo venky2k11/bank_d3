@@ -6,6 +6,15 @@
 	 grid-auto-flow: row;
 	 grid-template-columns: repeat(6, 1fr);
  }
+
+ #wrapper2 {
+	width: auto;
+	 height: auto;
+	 box-sizing: border-box;
+	 display: grid;
+	 grid-auto-flow: row;
+	 grid-template-columns: repeat(6, 1fr);
+ }
  
  #my_dataviz1{
 	 text-align: left;
@@ -17,18 +26,17 @@
 	 grid-column: 4/6;
  }
 
- /* .inline-div {
-	display: block;
+ #my_dataviz3{
 	text-align: left;
-  }
-  
-  h2
-  {
-	display: inline-block;
-	text-align: center;
-  } */
+	grid-column: 1/4;
+}
 
-  .text-left-right {
+#my_dataviz4 {
+	text-align: right;
+	grid-column: 4/6;
+}
+
+.text-left-right {
     text-align: right;
     position: relative;
 }
@@ -37,8 +45,6 @@
     position: absolute;
 }
 .byline {
-    /* font-size: 16px;
-	color: rgba(140, 140, 140, 1); */
 	left: 60%;
     position: absolute;
 }

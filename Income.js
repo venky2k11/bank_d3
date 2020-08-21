@@ -79,7 +79,9 @@ async function init1() {
             .attr("stroke", "url(#line-gradient)")
             .attr("stroke-width", 2)
             .attr("d", d3.line()
-                .x(function (d) { return x(d.DATE) })
+                .x(function (d) {
+                    return x(d.DATE);
+                })
                 .y(function (d) { return y(d.INCOME) })
             )
 
