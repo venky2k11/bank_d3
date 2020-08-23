@@ -65,18 +65,18 @@ async function init4() {
 
         line.selectAll("circle")
             .data(function (d) {
-                console.log('Hello');
+                // console.log('Hello');
                 return d.values
             })
             .enter()
             .append("circle")
             .attr("r", 3)
             .attr("cx", function (d) {
-                console.log(x(d.DATE));
+                // console.log(x(d.DATE));
                 return x(d.DATE);
             })
             .attr("cy", function (d) {
-                console.log(y(d.VALUE));
+                // console.log(y(d.VALUE));
                 return (d.VALUE);
             })
             .style("fill", "#010f00");

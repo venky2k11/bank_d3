@@ -11,14 +11,17 @@
   <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
   <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
   <script type="text/javascript" language="javascript" src="Income.js"></script>
   <script type="text/javascript" language="javascript" src="Expense.js"></script>
   <script type="text/javascript" language="javascript" src="NeedsPercentage.js"></script>
   <script type="text/javascript" language="javascript" src="DesirePercentage.js"></script>
   <script type="text/javascript" language="javascript" src="PopularExpenses.js"></script>
+  <script type="text/javascript" language="javascript" src="3MonthExpenses.js"></script>
+  <script type="text/javascript" language="javascript" src="3MonthExpenses2.js"></script>
 </head>
 
-<body onload='init1();init2();init3();init4();init5()'>
+<body onload='init1();init2();init3();init4();init5();init6();init7()'>
   <div class="fd-shell--fixed">
     <div class="fd-shell__header">
       <div class="fd-shellbar">
@@ -99,20 +102,26 @@
               </div>
 
               <br /><br /><br /><br />
-
               <br /><br /><br /><br />
-
               <h2 class="text-left-right">
-                <span class="left-text">Popular Expenses (Shopping Frequency):</span>
+                <span class="left-text2">Shopping Frequency:</span>
               </h2>
-
               <br /><br /><br /><br />
-
               <div id="wrapper3">
                 <div id="my_dataviz5" style="text-align:center;"></div>
+              </div>  
+              
+              <br /><br /><br /><br />
+              <h2 class="text-left-center">
+                <span class="left-text">Expenses (Last 3 Months):</span>
+                <span class="byline">Expenses (Last 3 Months Grouped):</span>
+              </h2>
+              <br /><br /><br /><br />
+              <div id="wrapper4">
+                <div id="my_dataviz6" style="text-align:center;"></div>
+                <div id="my_dataviz7" style="text-align:center;"></div>
               </div>
-
-              <br /><br /><br /><br />              
+              <br /><br /><br /><br />               
 
             </div>
           </div>

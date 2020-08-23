@@ -15,6 +15,24 @@
 	 grid-auto-flow: row;
 	 grid-template-columns: repeat(6, 1fr);
  }
+
+ #wrapper3 {
+	width: auto;
+	 height: auto;
+	 box-sizing: border-box;
+	 display: grid;
+	 grid-auto-flow: row;
+	 grid-template-columns: repeat(6, 1fr);
+ }
+
+ #wrapper4 {
+	width: auto;
+	 height: auto;
+	 box-sizing: border-box;
+	 display: grid;
+	 grid-auto-flow: row;
+	 grid-template-columns: repeat(6, 1fr);
+ }
  
  #my_dataviz1{
 	 text-align: left;
@@ -40,11 +58,28 @@
     text-align: right;
     position: relative;
 }
+
+.text-left-center {
+    text-align: center;
+    position: relative;
+}
+
 .left-text {
     left: 20%;
     position: absolute;
 }
+
+.left-text2 {
+    left: 35%;
+    position: absolute;
+}
+
 .byline {
 	left: 60%;
     position: absolute;
+}
+
+.node:hover{
+  stroke-width: 7px !important;
+  opacity: 1 !important;
 }

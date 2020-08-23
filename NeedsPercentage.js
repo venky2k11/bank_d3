@@ -63,23 +63,23 @@ async function init3() {
             })
 
 
-        line.selectAll("circle")
-            .data(function (d) {
-                console.log('Hello');
-                return d.values
-            })
-            .enter()
-            .append("circle")
-            .attr("r", 3)
-            .attr("cx", function (d) {
-                console.log(x(d.DATE));
-                return x(d.DATE);
-            })
-            .attr("cy", function (d) {
-                console.log(y(d.VALUE));
-                return (d.VALUE);
-            })
-            .style("fill", "#010f00");
+        // line.selectAll("circle")
+        //     .data(function (d) {
+        //         console.log('Hello');
+        //         return d.values
+        //     })
+        //     .enter()
+        //     .append("circle")
+        //     .attr("r", 3)
+        //     .attr("cx", function (d) {
+        //         console.log(x(d.DATE));
+        //         return x(d.DATE);
+        //     })
+        //     .attr("cy", function (d) {
+        //         console.log(y(d.VALUE));
+        //         return (d.VALUE);
+        //     })
+        //     .style("fill", "#010f00");
     }
 
     // function update(data) {
