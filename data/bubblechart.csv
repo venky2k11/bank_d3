@@ -1,0 +1,19 @@
+﻿CATEGORY,CLUSTER,KEY,VALUE
+Loan Pay,Cluster 3,1,16450
+Utilities,Cluster 2,2,2866.51
+Grocery & supermarkets,Cluster 2,3,2551.27
+Education,Cluster 2,4,4247.39
+Cash Out,Cluster 2,5,4546.06
+Bottleshops,Cluster 2,6,2700
+Travel,Cluster 1,7,50.6
+Subscription,Cluster 1,8,69.44
+Retail Shopping,Cluster 1,9,129.1
+Restaurants & dining,Cluster 1,10,137.24
+Miscellaneous,Cluster 1,11,247.73
+Insurance,Cluster 1,12,1408.88
+Gifts & donations,Cluster 1,13,5.5
+Fees & charges,Cluster 1,14,1200
+Fast food restaurants,Cluster 1,15,145.94
+Entertainment,Cluster 1,16,7.49
+Chemists,Cluster 1,17,324.38
+Auto & transport,Cluster 1,18,240.58
