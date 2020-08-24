@@ -51,7 +51,7 @@ async function init6() {
             Tooltip
                 .html('<u>' + d.CATEGORY + '</u>' + "<br>" + " $" + d.VALUE)
                 .style("left", (d3.mouse(this)[0] + 20) + "px")
-                .style("top", (d3.mouse(this)[1] + 2250) + "px")
+                .style("top", (d3.mouse(this)[1] + 2000) + "px")
         }
         var mouseleave = function (d) {
             Tooltip

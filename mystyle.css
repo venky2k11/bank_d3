@@ -91,3 +91,10 @@
 h2 {
     color:#069;
 }
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+  }
