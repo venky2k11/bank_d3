@@ -2,6 +2,7 @@
 
 <head>
   <title>Intelligent Transactions Analyser</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
@@ -20,9 +21,10 @@
   <script type="text/javascript" language="javascript" src="3MonthExpenses.js"></script>
   <script type="text/javascript" language="javascript" src="3MonthExpenses2.js"></script>
   <script type="text/javascript" language="javascript" src="sf2.js"></script>
+  <script type="text/javascript" language="javascript" src="sf3.js"></script>
 </head>
 
-<body onload='init1();init2();init3();init4();init6();init7();init8()'>
+<body onload='init1();init2();init3();init4();init6();init7();init8();init9()'>
   <!-- ;init5() -->
   <div class="fd-shell--fixed">
     <div class="fd-shell__header">
@@ -135,7 +137,9 @@
               <div id="wrapper3">
                 <div id="my_dataviz8" style="text-align:center;"></div>
               </div>
-
+              <div id="wrapper3">
+                <div id="my_dataviz9" style="text-align:center;"></div>
+              </div>
               <br /><br />
               <!-- <b>
                 <ul>
@@ -150,16 +154,18 @@
               <br /><br />
 
 
-              <h2 class="text-left-center">
+              <h2 class="text-left-left">
                 <span class="left-text">Expenses (Last 3 Months):</span>
-                <span class="byline">Expenses (Last 3 Months Grouped):</span>
+                <span class="byline2">Expenses (Last 3 Months Grouped):</span>
               </h2>
+
               <br /><br /><br /><br />
               <div id="wrapper4">
                 <div id="my_dataviz6" style="text-align:center;"></div>
                 <div id="my_dataviz7" style="text-align:center;"></div>
               </div>
-              <br /><br />
+              <!-- <br /><br />             -->
+              
               <!-- <b>
                 <ul>
                   <li>Apart from Loan payments, major expenses in last 3 months include: </li>
@@ -173,13 +179,13 @@
                   <li>Built-in smarts have further grouped the spending pattern into 3 distinct groups.</li>
                 </ul>
               </b> -->
-              <br /><br />
+              <!-- <br /><br /> -->
 
               <h2 class="text-left-center">
-                <span class="center">Correlation Matrix - Expenses:</span>
+                <span class="center">Expense Correlation:</span>
               </h2>
               <br /><br />
-              <img src="corr.jpg" alt=" " class="center">
+              <img src="corr.jpg" alt=" " class="center" style="max-width:40%;height:auto;">
               <br /><br />
 
             </div>

@@ -63,6 +63,11 @@
     position: relative;
 }
 
+.text-left-left {
+    text-align: left;
+    position: relative;
+}
+
 .text-left-center {
     text-align: center;
     position: relative;
@@ -80,6 +85,11 @@
 
 .byline {
 	left: 60%;
+    position: absolute;
+}
+
+.byline2 {
+	left: 50%;
     position: absolute;
 }
 

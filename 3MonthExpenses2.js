@@ -24,7 +24,7 @@ async function init7() {
             .range([10, 200])  // circle will be between 7 and 55 px wide
 
         // set the dimensions and margins of the graph
-        var width = 1050
+        var width = 1000
         var height = 600
 
         // append the svg object to the body of the page
@@ -93,7 +93,7 @@ async function init7() {
             .data(res)
             .enter()
             .append("circle")
-            .attr("cx", 700)
+            .attr("cx", 500)
             .attr("cy", function (d, i) { return 50 + i * 25 }) // 100 is where the first dot appears. 25 is the distance between dots
             .attr("r", 7)
             .style("fill", function (d) { return color(d) })
@@ -103,7 +103,7 @@ async function init7() {
             .data(res)
             .enter()
             .append("text")
-            .attr("x", 710)
+            .attr("x", 510)
             .attr("y", function (d, i) { return 50 + i * 25 }) // 100 is where the first dot appears. 25 is the distance between dots
             .style("fill", function (d) { return color(d) })
             .text(function (d) { return d })
