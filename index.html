@@ -16,12 +16,14 @@
   <script type="text/javascript" language="javascript" src="Expense.js"></script>
   <script type="text/javascript" language="javascript" src="NeedsPercentage.js"></script>
   <script type="text/javascript" language="javascript" src="DesirePercentage.js"></script>
-  <script type="text/javascript" language="javascript" src="PopularExpenses.js"></script>
+  <!-- <script type="text/javascript" language="javascript" src="PopularExpenses.js"></script> -->
   <script type="text/javascript" language="javascript" src="3MonthExpenses.js"></script>
   <script type="text/javascript" language="javascript" src="3MonthExpenses2.js"></script>
+  <script type="text/javascript" language="javascript" src="sf2.js"></script>
 </head>
 
-<body onload='init1();init2();init3();init4();init5();init6();init7()'>
+<body onload='init1();init2();init3();init4();init6();init7();init8()'>
+  <!-- ;init5() -->
   <div class="fd-shell--fixed">
     <div class="fd-shell__header">
       <div class="fd-shellbar">
@@ -63,7 +65,7 @@
           <ul class="fd-breadcrumb">
             <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="/">Home</a></li>
           </ul>
-          <h3 class="fd-section__title">Intelligent Transaction Analyser</h3>
+          <h3 class="fd-section__title">Intelligent Insights</h3>
         </section>
         <section class="fd-section">
           <div class="fd-layout">
@@ -79,39 +81,75 @@
                 <span class="left-text">Income (Last 24 months):</span>
                 <span class="byline">Expenses (Last 24 months):</span>
               </h2>
-
               <br /><br /><br />
-
               <div id="wrapper">
                 <div id="my_dataviz1" style="text-align:center;"></div>
                 <div id="my_dataviz2" style="text-align:center;"></div>
               </div>
 
-              <br /><br /><br /><br />
+              <br /><br />
+              <b>
+                <ul>
+                  <li>Trend analysis (Income & Expenses) for last 24 months shows, Expenses are below Income.</li>
+                  <li>Smart prediction of her future Income and Expenses also show a similar trend.</li>
+                  <li>Cosidering an average income of $15000, Sarah would fall under High Income group.</li>
+                </ul>
+              </b>
+              <br /><br />
+
 
               <h2 class="text-left-right">
                 <span class="left-text">% Income spent on Needs:</span>
                 <span class="byline">% Income spent on Desires:</span>
               </h2>
-
               <br /><br /><br /><br />
-
               <div id="wrapper2">
                 <div id="my_dataviz3" style="text-align:center;"></div>
                 <div id="my_dataviz4" style="text-align:center;"></div>
               </div>
 
-              <br /><br /><br /><br />
-              <br /><br /><br /><br />
+              <br /><br />
+              <b>
+                <ul>
+                  <li>Expenses categorized as Needs and Desires based on expense classification</li>
+                  <ol style="list-style-type: lower-alpha; padding-bottom: 0;">
+                    <li style="margin-left:2em">Percentage Income spent on Needs and Desires are as per Industry
+                      standards.
+                    </li>
+                  </ol>
+                  <li>Built-in smarts have further grouped the spending pattern into 3 distinct groups.</li>
+                  <ol style="list-style-type: lower-alpha; padding-bottom: 0;">
+                    <li style="margin-left:2em">On an Average, Sarah's expenses on her Needs and Desires are about 80%.
+                    </li>
+                    <li style="margin-left:2em">It is close to industry standards.</li>
+                  </ol>
+                </ul>
+              </b>
+              <br /><br />
+
+
               <h2 class="text-left-right">
                 <span class="left-text2">Shopping Frequency:</span>
               </h2>
               <br /><br /><br /><br />
               <div id="wrapper3">
-                <div id="my_dataviz5" style="text-align:center;"></div>
-              </div>  
-              
-              <br /><br /><br /><br />
+                <div id="my_dataviz8" style="text-align:center;"></div>
+              </div>
+
+              <br /><br />
+              <b>
+                <ul>
+                  <li>Most frequent expenses are: Groceries, Bottleshops and Loan Payments. </li>
+                  <li>Cashouts seems to have come down however, there has been an increase in Bottleshop expenses. </li>
+                  <ol style="list-style-type: lower-alpha; padding-bottom: 0;">
+                    <li style="margin-left:2em">Could be related to COVID-19 lockdown.
+                    </li>
+                  </ol>
+                </ul>
+              </b>
+              <br /><br />
+
+
               <h2 class="text-left-center">
                 <span class="left-text">Expenses (Last 3 Months):</span>
                 <span class="byline">Expenses (Last 3 Months Grouped):</span>
@@ -121,7 +159,21 @@
                 <div id="my_dataviz6" style="text-align:center;"></div>
                 <div id="my_dataviz7" style="text-align:center;"></div>
               </div>
-              <br /><br /><br /><br />               
+              <br /><br />
+              <b>
+                <ul>
+                  <li>Apart from Loan payments, major expenses in last 3 months include: </li>
+                  <ol style="list-style-type: lower-alpha; padding-bottom: 0;">
+                    <li style="margin-left:2em">Cashout</li>
+                    <li style="margin-left:2em">Education</li>
+                    <li style="margin-left:2em">Bottleshop</li>
+                    <li style="margin-left:2em">Grocery & Supermarkets</li>
+                    <li style="margin-left:2em">Utilities</li>
+                  </ol>
+                  <li>Built-in smarts have further grouped the spending pattern into 3 distinct groups.</li>
+                </ul>
+              </b>
+              <br /><br />
 
             </div>
           </div>

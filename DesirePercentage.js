@@ -41,6 +41,33 @@ async function init4() {
         yAxis = svg.append("g")
             .call(d3.axisLeft(y));
 
+        // create a tooltip
+        var Tooltip = d3.select("#my_dataviz4")
+            .append("div")
+            .style("opacity", 0)
+            .attr("class", "tooltip")
+            .style("background-color", "white")
+            .style("border", "solid")
+            .style("border-width", "2px")
+            .style("border-radius", "5px")
+            .style("padding", "5px")
+
+        // Three function that change the tooltip when user hover / move / leave a cell
+        var mouseover = function (d) {
+            Tooltip
+                .style("opacity", 1)
+        }
+        var mousemove = function (d) {
+            Tooltip
+                .html("Desires: " + d.VALUE + '%' + '<br>' + (d.DATE))
+                .style("left", (d3.mouse(this)[0] + 600) + "px")
+                .style("top", (d3.mouse(this)[1] + 900) + "px")
+        }
+        var mouseleave = function (d) {
+            Tooltip
+                .style("opacity", 0)
+        }
+
         // color palette
         var res = sumstat.map(function (d) { return d.key }) // list of group names
         var color = d3.scaleOrdinal()
@@ -62,24 +89,46 @@ async function init4() {
                     (d.values)
             })
 
-
-        line.selectAll("circle")
-            .data(function (d) {
-                // console.log('Hello');
-                return d.values
-            })
+        svg
+            .append("g")
+            .selectAll("dot")
+            .data(data)
             .enter()
             .append("circle")
-            .attr("r", 3)
-            .attr("cx", function (d) {
-                // console.log(x(d.DATE));
-                return x(d.DATE);
-            })
-            .attr("cy", function (d) {
-                // console.log(y(d.VALUE));
-                return (d.VALUE);
-            })
-            .style("fill", "#010f00");
+            .attr("class", "myCircle")
+            .attr("cx", function (d) { return x(d.DATE) })
+            .attr("cy", function (d) { return y(+d.VALUE) })
+            .attr("r", 6)
+            .attr("stroke", "#69b3a2")
+            .attr("stroke-width", 3)
+            .attr("fill", "white")
+            .on("mouseover", mouseover)
+            .on("mousemove", mousemove)
+            .on("mouseleave", mouseleave)
+
+        // Add one dot in the legend for each name.
+        svg.selectAll("mydots")
+            .data(res)
+            .enter()
+            .append("circle")
+            .attr("cx", 560)
+            .attr("cy", function (d, i) { return 300 + i * 25 }) // 100 is where the first dot appears. 25 is the distance between dots
+            .attr("r", 7)
+            .style("fill", function (d) { return color(d) })
+
+        // Add one dot in the legend for each name.
+        svg.selectAll("mylabels")
+            .data(res)
+            .enter()
+            .append("text")
+            .attr("x", 570)
+            .attr("y", function (d, i) { return 300 + i * 25 }) // 100 is where the first dot appears. 25 is the distance between dots
+            .style("fill", function (d) { return color(d) })
+            .text(function (d) { return d })
+            .attr("text-anchor", "left")
+            .style("alignment-baseline", "middle")
+
+
     }
 
     // function update(data) {

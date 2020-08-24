@@ -7,7 +7,7 @@ async function init1() {
     function update(data) {
         var margin = { top: 10, right: 30, bottom: 30, left: 60 },
             width = 700 - margin.left - margin.right,
-            height = 400 - margin.top - margin.bottom;
+            height = 500 - margin.top - margin.bottom;
 
         // append the svg object to the body of the page
         var svg = d3.select("#my_dataviz1")
@@ -31,10 +31,37 @@ async function init1() {
 
         // Add Y axis
         var y = d3.scaleLinear()
-            .domain([0, d3.max(data, function (d) { return +d.INCOME; })])
+            .domain([0, d3.max(data, function (d) { return +d.INCOME + 1000; })])
             .range([height, 0]);
         yAxis = svg.append("g")
             .call(d3.axisLeft(y));
+
+        // create a tooltip
+        var Tooltip = d3.select("#my_dataviz1")
+            .append("div")
+            .style("opacity", 0)
+            .attr("class", "tooltip")
+            .style("background-color", "white")
+            .style("border", "solid")
+            .style("border-width", "2px")
+            .style("border-radius", "5px")
+            .style("padding", "5px")
+
+        // Three function that change the tooltip when user hover / move / leave a cell
+        var mouseover = function (d) {
+            Tooltip
+                .style("opacity", 1)
+        }
+        var mousemove = function (d) {
+            Tooltip
+                .html("Income: " + '$' + d.INCOME + '<br>' +(d.DATE))
+                .style("left", (d3.mouse(this)[0] + 70) + "px")
+                .style("top", (d3.mouse(this)[1] + 250) + "px")
+        }
+        var mouseleave = function (d) {
+            Tooltip
+                .style("opacity", 0)
+        }
 
 
         // Set the gradient
@@ -147,6 +174,23 @@ async function init1() {
                     .y(function (d) { return y(d.INCOME) })
                 )
         });
+
+        line
+            .append("g")
+            .selectAll("dot")
+            .data(data)
+            .enter()
+            .append("circle")
+            .attr("class", "myCircle")
+            .attr("cx", function (d) { return x(d.DATE) })
+            .attr("cy", function (d) { return y(d.INCOME) })
+            .attr("r", 6)
+            .attr("stroke", "#69b3a2")
+            .attr("stroke-width", 3)
+            .attr("fill", "white")
+            .on("mouseover", mouseover)
+            .on("mousemove", mousemove)
+            .on("mouseleave", mouseleave)
 
     }
 

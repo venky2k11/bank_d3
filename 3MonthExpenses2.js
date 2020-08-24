@@ -9,21 +9,14 @@ async function init7() {
 
         // A scale that gives a X target position for each group
         var x = d3.scaleOrdinal()
-            .domain([1, 2, 3])
+            .domain([1,2,3])
             .range([50, 200, 340])
 
-        // Color palette
-        // var color = d3.scaleOrdinal()
-        //     .domain(["Loan Pay", "Utilities", "Grocery & supermarkets", "Education", "Cash Out", "Bottleshops", "Travel", "Subscription",
-        //         "Retail Shopping", "Restaurants & dining", "Miscellaneous", "Insurance", "Gifts & donations", "Fees & charges",
-        //         "Fast food restaurants", "Entertainment", "Chemists", "Auto & transport"])
-        //     .range(d3.schemeSet1);
 
         // A color scale
         var color = d3.scaleOrdinal()
-            .domain([1, 2, 3])
+            .domain(['Cluster 1', 'Cluster 2', 'Cluster 3'])
             .range(d3.schemeSet1);
-        // .range(["#F8766D", "#00BA38", "#619CFF"])
 
         // Size scale for countries
         var size = d3.scaleLinear()
@@ -60,16 +53,14 @@ async function init7() {
         }
         var mousemove = function (d) {
             Tooltip
-                .html('<u>' + d.CATEGORY + '</u>' + "<br>" + " $"+ d.VALUE )
+                .html('<u>' + d.CATEGORY + '</u>' + "<br>" + " $" + d.VALUE)
                 .style("left", (d3.mouse(this)[0] + 700) + "px")
-                .style("top", (d3.mouse(this)[1] + 2000) + "px")
+                .style("top", (d3.mouse(this)[1] + 2250) + "px")
         }
         var mouseleave = function (d) {
             Tooltip
                 .style("opacity", 0)
         }
-
-
 
         // Initialize the circle: all located at the center of the svg area
         var node = svg.append("g")
@@ -95,6 +86,31 @@ async function init7() {
                 .on("end", dragended));
 
 
+        res = ['Cluster 1', 'Cluster 2', 'Cluster 3'];
+
+        // Add one dot in the legend for each name.
+        svg.selectAll("mydots")
+            .data(res)
+            .enter()
+            .append("circle")
+            .attr("cx", 700)
+            .attr("cy", function (d, i) { return 50 + i * 25 }) // 100 is where the first dot appears. 25 is the distance between dots
+            .attr("r", 7)
+            .style("fill", function (d) { return color(d) })
+
+        // Add one dot in the legend for each name.
+        svg.selectAll("mylabels")
+            .data(res)
+            .enter()
+            .append("text")
+            .attr("x", 710)
+            .attr("y", function (d, i) { return 50 + i * 25 }) // 100 is where the first dot appears. 25 is the distance between dots
+            .style("fill", function (d) { return color(d) })
+            .text(function (d) { return d })
+            .attr("text-anchor", "left")
+            .style("alignment-baseline", "middle")
+
+
         // Features of the forces applied to the nodes:
         var simulation = d3.forceSimulation()
             .force("x", d3.forceX().strength(0.5).x(function (d) { return x(d.CLUSTER) }))
@@ -102,9 +118,6 @@ async function init7() {
             .force("center", d3.forceCenter().x(width / 2).y(height / 2)) // Attraction to the center of the svg area
             .force("charge", d3.forceManyBody().strength(1)) // Nodes are attracted one each other of value is > 0
             .force("collide", d3.forceCollide().strength(.1).radius(32).iterations(1))
-        // .force("center", d3.forceCenter().x(width / 2).y(height / 2)) // Attraction to the center of the svg area
-        // .force("charge", d3.forceManyBody().strength(.1)) // Nodes are attracted one each other of value is > 0
-        // .force("collide", d3.forceCollide().strength(.2).radius(function (d) { return (size(d.VALUE) + 3) }).iterations(1)) // Force that avoids circle overlapping
 
         // Apply these forces to the nodes and update their positions.
         // Once the force algorithm is happy with positions ('alpha' value is low enough), simulations will stop.

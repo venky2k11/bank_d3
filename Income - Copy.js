@@ -1,7 +1,7 @@
-async function init2() {
+async function init1() {
 
     const data_conf = await d3.csv("https://raw.githubusercontent.com/venky2k11/bank_d3/master/data/IncomeExpenses.csv", function (d) {
-        return { DATE: d3.timeParse("%Y-%m-%d")(d.DATE), EXPENSES: d.EXPENSES }
+        return { DATE: d3.timeParse("%Y-%m-%d")(d.DATE), INCOME: d.INCOME }
     });
 
     function update(data) {
@@ -10,7 +10,7 @@ async function init2() {
             height = 500 - margin.top - margin.bottom;
 
         // append the svg object to the body of the page
-        var svg = d3.select("#my_dataviz2")
+        var svg = d3.select("#my_dataviz1")
             .append("svg")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
@@ -27,20 +27,19 @@ async function init2() {
             .call(d3.axisBottom(x));
 
         // Max value observed:
-        const max = d3.max(data, function (d) { return +d.EXPENSES; })
+        const max = d3.max(data, function (d) { return +d.INCOME; })
 
         // Add Y axis
         var y = d3.scaleLinear()
-            .domain([0, d3.max(data, function (d) { return +d.EXPENSES + 1200; })])
+            .domain([0, d3.max(data, function (d) { return +d.INCOME + 1000; })])
             .range([height, 0]);
         yAxis = svg.append("g")
             .call(d3.axisLeft(y));
 
-
         // create a tooltip
-        var Tooltip = d3.select("#my_dataviz2")
+        var Tooltip = d3.select("#my_dataviz1")
             .append("div")
-            .style("opacity", 0)
+            .style("opacity", 1)
             .attr("class", "tooltip")
             .style("background-color", "white")
             .style("border", "solid")
@@ -55,14 +54,15 @@ async function init2() {
         }
         var mousemove = function (d) {
             Tooltip
-                .html("Expenses: " + '$' + d.EXPENSES + '<br>' + (d.DATE))
-                .style("left", (d3.mouse(this)[0] + 600) + "px")
+                .html("Income: " + '$' + d.INCOME + '<br>' +(d.DATE))
+                .style("left", (d3.mouse(this)[0] + 70) + "px")
                 .style("top", (d3.mouse(this)[1] + 250) + "px")
         }
         var mouseleave = function (d) {
             Tooltip
                 .style("opacity", 0)
         }
+
 
         // Set the gradient
         svg.append("linearGradient")
@@ -106,8 +106,10 @@ async function init2() {
             .attr("stroke", "url(#line-gradient)")
             .attr("stroke-width", 2)
             .attr("d", d3.line()
-                .x(function (d) { return x(d.DATE) })
-                .y(function (d) { return y(d.EXPENSES) })
+                .x(function (d) {
+                    return x(d.DATE);
+                })
+                .y(function (d) { return y(d.INCOME) })
             )
 
         const pathLength = path.node().getTotalLength();
@@ -156,7 +158,7 @@ async function init2() {
                 .duration(1000)
                 .attr("d", d3.line()
                     .x(function (d) { return x(d.DATE) })
-                    .y(function (d) { return y(d.EXPENSES) })
+                    .y(function (d) { return y(d.INCOME) })
                 )
         }
 
@@ -169,7 +171,7 @@ async function init2() {
                 .transition()
                 .attr("d", d3.line()
                     .x(function (d) { return x(d.DATE) })
-                    .y(function (d) { return y(d.EXPENSES) })
+                    .y(function (d) { return y(d.INCOME) })
                 )
         });
 
@@ -181,7 +183,7 @@ async function init2() {
             .append("circle")
             .attr("class", "myCircle")
             .attr("cx", function (d) { return x(d.DATE) })
-            .attr("cy", function (d) { return y(d.EXPENSES) })
+            .attr("cy", function (d) { return y(d.INCOME) })
             .attr("r", 6)
             .attr("stroke", "#69b3a2")
             .attr("stroke-width", 3)

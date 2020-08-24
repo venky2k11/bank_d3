@@ -4,7 +4,6 @@ async function init6() {
         return { CATEGORY: d.CATEGORY, CLUSTER: d.CLUSTER, KEY: d.KEY, VALUE: d.VALUE }
     });
 
-    // DATE: d3.timeParse("%Y-%m-%d")(d.DATE), 
     function update(data) {
 
         // Color palette
@@ -14,10 +13,6 @@ async function init6() {
                 "Fast food restaurants", "Entertainment", "Chemists", "Auto & transport"])
             .range(d3.schemeSet1);
 
-        // // A color scale
-        // var color = d3.scaleOrdinal()
-        //     .domain([1, 2, 3])
-        //     .range(["#F8766D", "#00BA38", "#619CFF"])
 
         // Size scale for countries
         var size = d3.scaleLinear()
@@ -54,9 +49,9 @@ async function init6() {
         }
         var mousemove = function (d) {
             Tooltip
-                .html('<u>' + d.CATEGORY + '</u>' + "<br>" + " $"+ d.VALUE )
+                .html('<u>' + d.CATEGORY + '</u>' + "<br>" + " $" + d.VALUE)
                 .style("left", (d3.mouse(this)[0] + 20) + "px")
-                .style("top", (d3.mouse(this)[1] + 2000) + "px")
+                .style("top", (d3.mouse(this)[1] + 2250) + "px")
         }
         var mouseleave = function (d) {
             Tooltip
@@ -87,6 +82,40 @@ async function init6() {
                 .on("start", dragstarted)
                 .on("drag", dragged)
                 .on("end", dragended));
+
+        res = ["Loan Pay", "Utilities", "Grocery & supermarkets", "Education", "Cash Out", "Bottleshops", "Travel", "Subscription",
+            "Retail Shopping", "Restaurants & dining", "Miscellaneous", "Insurance", "Gifts & donations", "Fees & charges",
+            "Fast food restaurants", "Entertainment", "Chemists", "Auto & transport"];
+
+        // Add one dot in the legend for each name.
+        svg.selectAll("mydots")
+            .data(res)
+            .enter()
+            .append("circle")
+            .attr("cx", 700)
+            .attr("cy", function (d, i) { return 50 + i * 25 }) // 100 is where the first dot appears. 25 is the distance between dots
+            .attr("r", 7)
+            .style("fill", function (d) { return color(d) })
+
+        // Add one dot in the legend for each name.
+        svg.selectAll("mylabels")
+            .data(res)
+            .enter()
+            .append("text")
+            .attr("x", 710)
+            .attr("y", function (d, i) { return 50 + i * 25 }) // 100 is where the first dot appears. 25 is the distance between dots
+            .style("fill", function (d) { return color(d) })
+            .text(function (d) { return d })
+            .attr("text-anchor", "left")
+            .style("alignment-baseline", "middle")
+
+
+
+
+
+
+
+
 
 
         // Features of the forces applied to the nodes:

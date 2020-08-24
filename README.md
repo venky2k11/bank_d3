@@ -1,5 +1,6 @@
-# bank_d3
-Bank Transaction Analysis
+# COVID-19 status analysis
 
 
-https://venky2k11.github.io/bank_d3/
+Project URL:         https://venky2k11.github.io/vrb3_d3/
+
+Refer "D3.js Project COVID-19 status analysis-.pdf" for details

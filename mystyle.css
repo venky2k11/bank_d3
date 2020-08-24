@@ -34,6 +34,10 @@
 	 grid-template-columns: repeat(6, 1fr);
  }
  
+ .myCircle:hover {
+	stroke: black;
+  }
+  
  #my_dataviz1{
 	 text-align: left;
 	 grid-column: 1/4;
@@ -82,4 +86,8 @@
 .node:hover{
   stroke-width: 7px !important;
   opacity: 1 !important;
+}
+
+h2 {
+    color:#069;
 }
