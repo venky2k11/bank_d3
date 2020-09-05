@@ -29,7 +29,7 @@ async function init8() {
     function update(data) {
 
         // set the dimensions and margins of the graph
-        var margin = { top: 10, right: 200, bottom: 30, left: 130 },
+        var margin = { top: 10, right: 120, bottom: 30, left: 160 },
             width = 1570 - margin.left - margin.right,
             height = 400 - margin.top - margin.bottom;
 
